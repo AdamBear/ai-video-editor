@@ -39,7 +39,7 @@
 						<p>{{item.name}}</p>
 					</div>
 				</div>
-				<el-empty description="暂无音色"></el-empty>
+				<el-empty v-if="listByCategory.length == 0" description="暂无音色"></el-empty>
 			</el-scrollbar>
 		</div>
 		<template #footer>
